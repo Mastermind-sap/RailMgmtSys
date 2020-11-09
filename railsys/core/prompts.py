@@ -1,6 +1,7 @@
 """
 This module contains all the prompts for the System
 """
+from __future__ import (print_function, absolute_import, with_statement)
 from tabulate import tabulate   # pylint: disable=import-error
 
 class prompt_str:
@@ -46,4 +47,4 @@ class prompt:
 
 
 
-prompt().train_book_prompt()
+# prompt().train_book_prompt()

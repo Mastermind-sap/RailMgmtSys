@@ -1,8 +1,8 @@
 """
 This contains some attractive strings for the terminal created using cfonts.
 """
-
-from cfonts import render, say
+from __future__ import (print_function, absolute_import, with_statement)
+from cfonts import render, say  # pylint: disable=import-error,unused-import
 import time
 import os
 
