@@ -11,7 +11,9 @@ class prompt_str:
                  ["2", "Cancel a reservation"],
                  ["3", "Call an Ambulance"],
                  ["4", "Check Train Status"],
-                 ["5", "Order a meal"]
+                 ["5", "Order a meal"],
+                 ["6", "Exit"],
+                 ["7", "Admin"]
                 ]
 
     train_book = [
@@ -36,7 +38,7 @@ class prompt:
 
     def intro_prompt(self):
         headers = ["Options" , "Prompt"]    # pylint disable 
-        print(tabulate(self.prompts.intro_str , headers , tablefmt="fancy_grid"))   # pylint disable 
+        print(tabulate(self.prompts.intro_str, headers, tablefmt="fancy_grid"))   # pylint disable 
 
     def train_book_prompt(self):
         headers = ["Options" , "Prompt"]    # pylint disable 
@@ -45,6 +47,4 @@ class prompt:
     def train_opts_prompt(self):
         print(self.prompts.train_opts)
 
-
-
-# prompt().train_book_prompt()
+prompt().train_book_prompt()
